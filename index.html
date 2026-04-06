@@ -262,16 +262,43 @@
 
   .marquee-track {
     display: inline-flex;
-    gap: 48px;
-    animation: marquee 60s linear infinite;
+    align-items: center;
+    gap: 0;
+    animation: marquee 80s linear infinite;
     white-space: nowrap;
   }
 
-  .marquee-track span {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    color: #555;
-    letter-spacing: 0.05em;
+  .marquee-track img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    vertical-align: middle;
+    margin: 0 40px;
+    filter: grayscale(100%) opacity(0.6);
+    transition: filter 0.3s ease;
+  }
+
+  .marquee-track img:hover {
+    filter: grayscale(0%) opacity(1);
+  }
+
+  .marquee-track img.logo-invert {
+    filter: grayscale(0%) opacity(0.5) invert(1);
+    mix-blend-mode: normal;
+    height: 48px;
+  }
+
+  .marquee-track img.logo-invert:hover {
+    filter: grayscale(0%) opacity(1) invert(1);
+  }
+
+  .marquee-track img.logo-large {
+    height: 48px;
+  }
+
+
+  .marquee-track img.logo-loves:hover {
+    filter: grayscale(0%) opacity(1) brightness(0.3);
   }
 
   @keyframes marquee {
@@ -1093,8 +1120,96 @@
   <div class="hero-bottom">
     <div class="marquee-container">
       <div class="marquee-track">
-        <span>BP · Shell · Chevron · ExxonMobil · Phillips 66 · Suncor · Marathon · Motiva · Petro Canada · Neste · Parkland · Puma Energy · Repsol · Pemex · Idemitsu · Petronas · Astron Energy · Murphy USA · Speedway · 7-Eleven · Circle K · Wawa · Kwik Trip · TA · Casey's · ENI · TotalEnergies · OMV · Aramco · ADNOC · Galp · EG America · Orlen · ENEOS · BPCL · YPF · HelleniQ · Petrobras · Vibra · Ipiranga · ESMAX · Terpel · Loves · Pertamina · PTTOR · OXXO · Ampol · OKQ8</span>
-        <span>BP · Shell · Chevron · ExxonMobil · Phillips 66 · Suncor · Marathon · Motiva · Petro Canada · Neste · Parkland · Puma Energy · Repsol · Pemex · Idemitsu · Petronas · Astron Energy · Murphy USA · Speedway · 7-Eleven · Circle K · Wawa · Kwik Trip · TA · Casey's · ENI · TotalEnergies · OMV · Aramco · ADNOC · Galp · EG America · Orlen · ENEOS · BPCL · YPF · HelleniQ · Petrobras · Vibra · Ipiranga · ESMAX · Terpel · Loves · Pertamina · PTTOR · OXXO · Ampol · OKQ8</span>
+        <img src="bp.webp" alt="BP" class="logo-large">
+        <img src="Shell logo.png" alt="Shell">
+        <img src="Chevron logo.png" alt="Chevron">
+        <img src="Exxon logo.png" alt="ExxonMobil">
+        <img src="P66 logo.png" alt="Phillips 66">
+        <img src="Suncor logo.png" alt="Suncor">
+        <img src="MPC logo.png" alt="Marathon">
+        <img src="Motiva logo.png" alt="Motiva">
+        <img src="Petro Canada logo.png" alt="Petro Canada">
+        <img src="Neste logo.png" alt="Neste">
+        <img src="Parkland logo.png" alt="Parkland">
+        <img src="Puma Energy logo.png" alt="Puma Energy">
+        <img src="Repsol logo.png" alt="Repsol">
+        <img src="PEMEX Logo.svg" alt="Pemex">
+        <img src="Idemitsu logo.png" alt="Idemitsu">
+        <img src="Petronas logo.png" alt="Petronas">
+        <img src="Murphy USA.png" alt="Murphy USA">
+        <img src="Speedway.png" alt="Speedway">
+        <img src="7 Eleven logo.png" alt="7-Eleven">
+        <img src="Circle K.png" alt="Circle K">
+        <img src="Wawa logo.png" alt="Wawa">
+        <img src="Kwik Trip.png" alt="Kwik Trip">
+        <img src="TA logo.png" alt="TA">
+        <img src="Caseys logo.png" alt="Casey's">
+        <img src="ENI logo.svg" alt="ENI">
+        <img src="Total Energies logo.webp" alt="TotalEnergies" class="logo-large">
+        <img src="OMV logo.png" alt="OMV">
+        <img src="ARAMCO logo.png" alt="Aramco">
+        <img src="ADNOC logo.png" alt="ADNOC">
+        <img src="GALP logo.png" alt="Galp">
+        <img src="EG Logo.png" alt="EG America">
+        <img src="Orlen logo.png" alt="Orlen" class="logo-large">
+        <img src="ENEOS logo.svg" alt="ENEOS">
+        <img src="BPCL logo.png" alt="BPCL" class="logo-large">
+        <img src="YPF logo.png" alt="YPF">
+        <img src="HelleniQ logo.png" alt="HelleniQ">
+        <img src="Vibra Logo.png" alt="Vibra">
+        <img src="Ipiranga logo.png" alt="Ipiranga">
+        <img src="ESMAX logo.png" alt="ESMAX">
+        <img src="LOVES logo.png?v=2" alt="Loves" class="logo-loves">
+        <img src="Pertamina logo.png" alt="Pertamina">
+        <img src="PTT logo.png" alt="PTT">
+        <img src="OXXO logo.png" alt="OXXO">
+        <img src="Ampol logo.png" alt="Ampol">
+        <img src="OKQ8 logo.png" alt="OKQ8">
+        <img src="bp.webp" alt="BP" class="logo-large">
+        <img src="Shell logo.png" alt="Shell">
+        <img src="Chevron logo.png" alt="Chevron">
+        <img src="Exxon logo.png" alt="ExxonMobil">
+        <img src="P66 logo.png" alt="Phillips 66">
+        <img src="Suncor logo.png" alt="Suncor">
+        <img src="MPC logo.png" alt="Marathon">
+        <img src="Motiva logo.png" alt="Motiva">
+        <img src="Petro Canada logo.png" alt="Petro Canada">
+        <img src="Neste logo.png" alt="Neste">
+        <img src="Parkland logo.png" alt="Parkland">
+        <img src="Puma Energy logo.png" alt="Puma Energy">
+        <img src="Repsol logo.png" alt="Repsol">
+        <img src="PEMEX Logo.svg" alt="Pemex">
+        <img src="Idemitsu logo.png" alt="Idemitsu">
+        <img src="Petronas logo.png" alt="Petronas">
+        <img src="Murphy USA.png" alt="Murphy USA">
+        <img src="Speedway.png" alt="Speedway">
+        <img src="7 Eleven logo.png" alt="7-Eleven">
+        <img src="Circle K.png" alt="Circle K">
+        <img src="Wawa logo.png" alt="Wawa">
+        <img src="Kwik Trip.png" alt="Kwik Trip">
+        <img src="TA logo.png" alt="TA">
+        <img src="Caseys logo.png" alt="Casey's">
+        <img src="ENI logo.svg" alt="ENI">
+        <img src="Total Energies logo.webp" alt="TotalEnergies" class="logo-large">
+        <img src="OMV logo.png" alt="OMV">
+        <img src="ARAMCO logo.png" alt="Aramco">
+        <img src="ADNOC logo.png" alt="ADNOC">
+        <img src="GALP logo.png" alt="Galp">
+        <img src="EG Logo.png" alt="EG America">
+        <img src="Orlen logo.png" alt="Orlen" class="logo-large">
+        <img src="ENEOS logo.svg" alt="ENEOS">
+        <img src="BPCL logo.png" alt="BPCL" class="logo-large">
+        <img src="YPF logo.png" alt="YPF">
+        <img src="HelleniQ logo.png" alt="HelleniQ">
+        <img src="Vibra Logo.png" alt="Vibra">
+        <img src="Ipiranga logo.png" alt="Ipiranga">
+        <img src="ESMAX logo.png" alt="ESMAX">
+        <img src="LOVES logo.png?v=2" alt="Loves" class="logo-loves">
+        <img src="Pertamina logo.png" alt="Pertamina">
+        <img src="PTT logo.png" alt="PTT">
+        <img src="OXXO logo.png" alt="OXXO">
+        <img src="Ampol logo.png" alt="Ampol">
+        <img src="OKQ8 logo.png" alt="OKQ8">
       </div>
     </div>
   </div>
@@ -1121,13 +1236,13 @@
     <div class="card animate" data-delay="200">
       <span class="card-label">Deeply Engaged in the Industry</span>
       <div class="card-stat" data-counter data-target="25" data-suffix="+">25+</div>
-      <p class="card-body">Years on the front stage of NACS, Conexxus, AACS and more — shaping the industry narrative, not just following it.</p>
+      <p class="card-body">Years on the front stage of NACS, Conexxus, NRF, AACS and more — shaping the industry narrative, not just following it.</p>
     </div>
 
     <div class="card animate" data-delay="300">
       <span class="card-label">Leading Partnerships</span>
       <div class="card-stat" data-counter data-target="25" data-suffix="+">25+</div>
-      <p class="card-body">Established relationships across the full ecosystem — Microsoft, NVIDIA, OpenAI, PDI, Salesforce, Fiserv, Invenco and more.</p>
+      <p class="card-body">Established relationships across the full ecosystem — Microsoft, NVIDIA, OpenAI, PDI, Salesforce, Fiserv, GVR and more.</p>
     </div>
   </div>
 
@@ -1567,30 +1682,13 @@
 
   </div>
 
-  <div class="signals-value-bar">
-    <div class="signals-stat animate" data-delay="0">
-      <div class="signals-stat-number">+X%</div>
-      <div class="signals-stat-label">Increased Margin</div>
-      <div class="signals-stat-desc">Optimized across the value chain</div>
-    </div>
-    <div class="signals-stat animate" data-delay="100">
-      <div class="signals-stat-number">+X%</div>
-      <div class="signals-stat-label">Decreased Cost</div>
-      <div class="signals-stat-desc">Through automation</div>
-    </div>
-    <div class="signals-stat animate" data-delay="200">
-      <div class="signals-stat-number">+X%</div>
-      <div class="signals-stat-label">Improved Productivity</div>
-      <div class="signals-stat-desc">Efficiency gains across the network</div>
-    </div>
-  </div>
 </section>
 
 <!-- ===================== 6. PARTNERSHIPS ===================== -->
 <section id="partners">
   <span class="section-eyebrow animate">Partners</span>
   <h2 class="section-headline animate" data-delay="100">We are the glue that<br>holds the ecosystem<br>together.</h2>
-  <p class="section-subcopy animate" data-delay="200">25+ years working this complex ecosystem — bringing relevance and incremental value for clients around the world.</p>
+  <p class="section-subcopy animate" data-delay="200">In this industry, no single partner has all the answers. We connect the dots — making data housed in one platform talk to data housed in another, so your entire ecosystem works as one.</p>
 
   <div class="partner-pills animate" data-delay="300">
     <span class="partner-pill">Microsoft</span>
